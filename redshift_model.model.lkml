@@ -1,13 +1,13 @@
 # # Make sure this is a connection where the database user has sufficient permissions (per above link)
 
-connection: "amazon_redshift_lothric"
+connection: "redshift"
 case_sensitive: no
 
 include: "redshift_*.dashboard"
 include: "redshift_*.view"
 
 explore: redshift_data_loads {
-   hidden: yes
+  hidden: yes
 }
 
 explore: redshift_db_space {
